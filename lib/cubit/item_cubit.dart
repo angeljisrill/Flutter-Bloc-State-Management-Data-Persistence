@@ -63,7 +63,7 @@ class ItemCubit extends Cubit<ItemState> {
     final current = state.items;
     final updated = current.map((item) {
       if (item.id == id) {
-        return item.copyWith(title: newTitle); // update title
+        return item.copyWith(title: newTitle); 
       }
       return item;
     }).toList();
